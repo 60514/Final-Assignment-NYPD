@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=72"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "literature-analyzer"
+version = "0.0.1"
+description = "A tool for analysing vocabulary and writing style in literary works."
+readme = "README.md"
+authors = [
+    { name = "Małgosia Kwasowiec", email = "ma.kwasowiec@student.uw.edu.pl"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+
+[project.license]
+text = "BSD 3-Clause"
+
+[project.scripts]
+literature-analyzer = "analyzer.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
