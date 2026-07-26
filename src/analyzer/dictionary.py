@@ -1,13 +1,3 @@
-"""
-dictionary.py
-├── read the dictionary file
-├── split each line into words/forms
-├── count dictionary lines
-├── count all words and unique words
-├── find most frequent words
-└── count letters and other characters
-"""
-
 from collections import Counter
 from pathlib import Path
 
@@ -18,7 +8,7 @@ def read_dictionary(path: Path) -> tuple[int, list[str]]: # Read dictionary - re
 
     words = []
     for line in lines:
-        forms = line.split(", ")
+        forms = line.split(",")
         for word in forms:
             word = word.strip().lower()
             if word:
