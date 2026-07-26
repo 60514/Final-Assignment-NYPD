@@ -10,6 +10,9 @@ readme = "README.md"
 authors = [
     { name = "Małgosia Kwasowiec", email = "ma.kwasowiec@student.uw.edu.pl"}
 ]
+dependencies = [
+    "pandas>=2.0"
+]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Education",

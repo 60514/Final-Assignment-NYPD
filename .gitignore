@@ -8,4 +8,5 @@ __pycache__/
 /data/
 /Final assignment in NYPD 25_26 (1).pdf
 *.txt
+run_project_check.py
 run_dictionary.py
