@@ -1,3 +1,11 @@
+/.venv
+
+# Python bytecode cache
+__pycache__/
+*.py[cod]
+
+# helpers
 /data/
 /Final assignment in NYPD 25_26 (1).pdf
 *.txt
+run_dictionary.py
