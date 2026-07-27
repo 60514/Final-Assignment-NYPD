@@ -15,6 +15,14 @@ def read_work(path: Path) -> tuple[int, list[str]]:
     return lines, words
 
 def read_works(paths: list[Path]) -> dict[Path, tuple[int, list[str]]]:
+    works = {}
+
+    for path in paths:
+        works[path] = read_work(path)
+
+    return works
+
+def read_works(paths: list[Path]) -> dict[Path, tuple[int, list[str]]]:
     return {path: read_work(path) for path in paths}
 
 def calculate_work_statistics(num_lines: int, words: list[str]) -> dict:
