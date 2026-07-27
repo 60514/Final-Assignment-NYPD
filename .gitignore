@@ -2,6 +2,7 @@
 
 # Python bytecode cache
 __pycache__/
+.pytest*
 *.py[cod]
 
 # helpers
