@@ -3,13 +3,13 @@ requires = ["setuptools>=72"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "literature-analyzer"
+name = "analyzer"
 version = "0.0.1"
 description = "A tool for analysing vocabulary and writing style in literary works."
 readme = "README.md"
 dependencies = [
     "pandas>=2.0",
-    "mathplotlib>=3.7"
+    "matplotlib>=3.7"
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
